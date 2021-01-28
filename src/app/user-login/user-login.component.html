@@ -1,0 +1,19 @@
+<form>
+  <div class="container">
+    <b>Username</b>
+    <input #username type="text" placeholder="Enter Username" name="uname" required>
+
+    <b>Password</b>
+    <input #password type="password" placeholder="Enter Password" name="psw" required>
+
+    <div class="ui-g-12">
+      <button type="button" pButton label="Login" (click)="check(username.value,password.value)"></button>
+    </div>
+    <div class="ui-g-12">
+      <button type="button" pButton label="Sign up" (click)="redirect()"></button>
+    </div>
+
+
+    <p id="wrong">Wrong password</p>
+  </div>
+</form>
